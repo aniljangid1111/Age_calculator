@@ -47,3 +47,23 @@ function calAge() {
     secondsUser.value = sec;
 
 }
+window.addEventListener("DOMContentLoaded", function () {
+    const dateInput = document.getElementById("userdata");
+    const timeInput = document.getElementById("userTime");
+
+    // Handle date input
+    dateInput.addEventListener("focus", function () {
+        this.type = "date";
+    });
+    dateInput.addEventListener("blur", function () {
+        if (!this.value) this.type = "text";
+    });
+
+    // Handle time input
+    timeInput.addEventListener("focus", function () {
+        this.type = "time";
+    });
+    timeInput.addEventListener("blur", function () {
+        if (!this.value) this.type = "text";
+    });
+});

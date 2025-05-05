@@ -57,6 +57,9 @@ input {
     gap: 10px;
     justify-content: center;
 }
+.user input{
+    width: 200px;
+}
 
 .result {
     max-width: 350px;
