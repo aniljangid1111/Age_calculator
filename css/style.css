@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+img{
+    width: 100%;
+}
 
 body {
     background-image: url(../img/first.jpg);
+    /* background-size: 100vh,100vw; */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -47,7 +51,7 @@ input {
 }
 
 .user {
-    max-width: 450px;
+    /* max-width: 450px; */
     margin:  10px auto;
 }
 
