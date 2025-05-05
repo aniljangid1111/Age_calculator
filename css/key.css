@@ -1,51 +1,57 @@
-@media only screen and (max-width:1180px){
-    .container{
-        padding:20px;
+@media only screen and (max-width:1180px) {
+    .container {
+        padding: 20px;
     }
-    
+
 }
-@media only screen and (max-width:500px){
-    .container{
+
+@media only screen and (max-width:500px) {
+    .container {
         max-width: 350px;
         padding: 15px
     }
-    .user{
+
+    .user {
         padding: 15px;
         margin: 0px;
         flex-direction: column;
-        
+
     }
-    .user input{
+
+    .user input {
         width: 100%;
-        padding: 10px 15px;
+        padding: 5px 15px;
         /* margin: auto; */
         margin: 5px 0;
     }
-    .btn{
-        
+
+    .btn {
+
         width: 250px;
         margin: auto;
     }
-    .btn button{
+
+    .btn button {
         margin-bottom: 5px;
     }
-    .result .inner{
+
+    .result .inner {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        text-align:start;
+        text-align: start;
         padding: 5px;
     }
-    .inner label{
-        margin-left: 24px ;
+
+    .inner label {
+        margin-left: 24px;
     }
-    
-    
 }
-@media only screen and (max-width:400px){
-    .container{
+
+@media only screen and (max-width:400px) {
+    .container {
         width: 300px;
-        padding:30px;
+        padding: 30px;
     }
-    
+
 }
