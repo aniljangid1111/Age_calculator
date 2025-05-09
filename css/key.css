@@ -10,41 +10,44 @@
         max-width: 350px;
         padding: 15px
     }
-
+    input{
+        margin: auto;
+        
+    }
     .user {
         padding: 15px;
         margin: 0px;
-        flex-direction: column;
-
+        gap: 2px;
     }
 
     .user input {
-        width: 100%;
+        
         padding: 4px 15px;
         /* margin: auto; */
         margin: 5px 0;
+        
     }
 
     .btn {
-
         width: 250px;
         margin: auto;
     }
 
     .btn button {
-        margin-bottom: 5px;
+        margin: 2px 0px;
     }
-
+    
     .result .inner {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        text-align: start;
+        align-items: start;
         padding: 5px;
+        margin: 5px 0;
     }
 
     .inner label {
-        margin-left: 24px;
+        margin-left: 30px;
     }
 }
 

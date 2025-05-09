@@ -7,17 +7,23 @@
     <title>Age Calculator</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/key.css">
-   
+
 </head>
 
 <body>
     <div class="container">
         <h3>Age Calculator</h3>
         <div class="user">
-            <input type="text" id="userdata" placeholder="dd/mm/yyyy">
-            <input type="text" id="userTime" placeholder="hh:mm">
-            
-        </div>
+            <div class="field">
+              <label for="userdata">Date of Birth</label>
+              <input type="date" id="userdata" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="field">
+              <label for="userTime">Time of Birth</label>
+              <input type="time" id="userTime" placeholder="hh:mm">
+            </div>
+          </div>
+          
         <div class="btn">
             <button onclick="calAge()">Submit</button>
         </div>

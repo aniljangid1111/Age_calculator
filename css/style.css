@@ -36,11 +36,11 @@ input {
     border-radius: 7px;
     border: 1px solid  #59718c;
     padding: 4px 25px;
-    color: #350f15;
+    color: #86909e;
     font-size: 16px;
     margin-left: 20px;
+    /* margin: auto; */
 }
-
 
 .container h3 {
     font-size: 24px;
@@ -51,17 +51,29 @@ input {
     text-transform: uppercase;
 }
 
-
 .user {
     max-width: 450px;
-    margin:  10px auto;
+    margin: 10px auto;
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
 }
-.user input{
-    width: 200px;
+
+.user div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 300px;
+    margin: auto;
+    color: #86909e;
 }
+.user input {
+    /* width: 100%; */
+    width: 300px;
+    margin: auto;
+    /* padding: 6px 12px; */
+}
+
 
 .result {
     max-width: 350px;
@@ -76,15 +88,26 @@ input {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-}
+    align-items: center;
 
-.btn button{
+}
+.btn button {
     padding: 5px 25px;
     border: none;
     border-radius: 8px;
     text-transform: uppercase;
     font-size: 16px;
     margin: 15px 0;
-    background: linear-gradient(to right, #061C36, #271D37 );
+    background: linear-gradient(120deg, #061C36, #371d28, #061C36);
+    background-size: 200% auto;
+    background-position: left center;
     color: #86909e;
+    cursor: pointer;
+    box-shadow: 0 1.5px 3px #86909E;
+    transition: all 1s ease, background-position 1s ease;
+}
+
+.btn button:hover {
+    background-position: right center;
+    color: #ffffff;
 }
