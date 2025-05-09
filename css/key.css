@@ -56,5 +56,12 @@
         width: 300px;
         padding: 30px;
     }
+     .user input {
+        
+        padding: 4px 15px;
+        width: 230px;
+        margin: 5px auto;
+        
+    }
 
 }

@@ -7,6 +7,9 @@
 img{
     width: 100%;
 }
+html, body {
+    height: 100dvh;
+}
 
 body {
     background-image: url(../img/first.jpg);
@@ -16,19 +19,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: auto;
 }
 
 .container {
     max-width: 600px;
-    /* height: 400px; */
-    margin: auto;
     box-shadow: 0 0 20px #2b4d75;
     text-align: center;
     background-color: transparent;
     border-radius: 1px 90px 1px 90px;
     padding: 20px;
+    backdrop-filter: blur(50px);
 }
 
 input {
@@ -41,6 +42,31 @@ input {
     margin-left: 20px;
     /* margin: auto; */
 }
+input:focus {
+    outline: none;
+    border: 1px solid #cbd2d9;
+    box-shadow: 0 0 5px #86909e;
+}
+.user label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #cbd2d9;
+}
+
+input[type="date"],
+input[type="time"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #2b4d75;
+    color: #cbd2d9;
+    padding: 8px 15px;
+    border-radius: 7px;
+    border: 1px solid #59718c;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 .container h3 {
     font-size: 24px;
@@ -90,6 +116,9 @@ input {
     margin: 20px 0;
     align-items: center;
 
+}
+.inner input{
+    width: 230px;
 }
 .btn button {
     padding: 5px 25px;
